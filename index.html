@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Airbnb!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, Guest!</h1>
+        <p>We're so happy to have you. Here's a little guide to help you get settled.</p>
+    </header>
+    
+    <div class="container">
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+            <div class="tab-nav">
+                <button class="tab-button active" onclick="openTab(event, 'welcome')">Welcome</button>
+                <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
+                <button class="tab-button" onclick="openTab(event, 'house-rules')">House Rules</button>
+                <button class="tab-button" onclick="openTab(event, 'amenities')">Amenities</button>
+                <button class="tab-button" onclick="openTab(event, 'local-favorites')">Local Favorites</button>
+                <button class="tab-button" onclick="openTab(event, 'departure')">Departure</button>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="welcome" class="tab-content active">
+            <h2>A Little Welcome Note</h2>
+            <p>Welcome to San Diego! We hope you have a wonderful stay. Please make yourself at home and don't hesitate to reach out if you need anything.</p>
+            
+            <!-- Hero Image -->
+            <div class="hero-image-container">
+                <img src="images/67-print-Radiate_6560CascadeSt-67.jpg" alt="6560 Cascade St, San Diego - Your Home Away From Home" class="hero-image">
+                <div class="hero-overlay">
+                    <h3>Welcome to 6560 Cascade St!</h3>
+                    <p>Your perfect San Diego vacation home awaits</p>
+                </div>
+            </div>
+            
+            <!-- Image Gallery -->
+            <h3>Discover San Diego</h3>
+            <p>Explore the amazing attractions and beautiful scenery that make San Diego a world-class destination:</p>
+            
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/crystal pier pacific beach sunset.jpg" alt="Crystal Pier Pacific Beach Sunset" class="gallery-image">
+                    <div class="image-caption">
+                        <h4>Stunning Pacific Beach Views</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/blue-horizons.jpg" alt="Seaworld San Diego" class="gallery-image">
+                    <div class="image-caption">
+                        <h4>Seaworld San Diego</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/San_Diego_Zoo_Entrance_.jpg" alt="San Diego Zoo Entrance" class="gallery-image">
+                    <div class="image-caption">
+                        <h4>World-Famous San Diego Zoo</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/Legoland-California-on-a-Budget-Park-Entrance.webp" alt="Legoland California Park Entrance" class="gallery-image">
+                    <div class="image-caption">
+                        <h4>Legoland California</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Important Contacts</h2>
+            <ul>
+                <li><strong>Host Name:</strong> Jingjing Zhang</li>
+                <li><strong>Phone Number:</strong> 858-252-5617</li>
+                <li><strong>Property Address:</strong> 6560 Cascade St, San Diego, CA 92122</li>
+                <li><strong>Emergency Services:</strong> 911</li>
+                <li><strong>Nearest Hospital:</strong> <a href="https://maps.app.goo.gl/hrhuU3Vqqi3nRkE9A" target="_blank" rel="noopener noreferrer">Scripps Memorial Hospital La Jolla</a></li>
+            </ul>
+        </div>
+
+        <div id="house-rules" class="tab-content">
+            <h2>House Rules & Guidelines</h2>
+            <p>To ensure everyone has a comfortable and enjoyable stay, please follow these house rules. They help us maintain a clean, safe, and welcoming environment for all our guests and our neighbors.</p>
+            
+            <div class="rules-grid">
+                <div class="rule-item">
+                    <h4>🕐 Check-in & Check-out</h4>
+                    <p><strong>Check-in:</strong> After 4:00 PM (We are unable to offer early check-in due to cleaning and preparation requirements.)</p>
+                    <p><strong>Check-out:</strong> By 12:00 PM</p>
+                    <p><strong>Early Check-in/Late Check-out:</strong> Not available due to cleaning requirements</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>👥 Guest Limits</h4>
+                    <p><strong>Maximum Guests:</strong> 10 total (including children)</p>
+                    <p><strong>Adult Limit:</strong> No more than 8 adults</p>
+                    <p><strong>Enforcement:</strong> These limits are strictly enforced for safety and neighborhood compliance</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>🚭 Smoking & Pets</h4>
+                    <p><strong>Smoking:</strong> Smoking, vaping, and e-cigarettes are not allowed anywhere on the property</p>
+                    <p><strong>Pets:</strong> Pets are not allowed</p>
+                    <p><strong>Service Animals:</strong> Please contact us in advance if you have a service animal</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>🔇 Noise & Quiet Hours</h4>
+                    <p><strong>Quiet Hours:</strong> 10:00 PM - 8:00 AM</p>
+                    <p><strong>Noise Policy:</strong> Keep all noise, including music, at low volumes, especially outdoors</p>
+                    <p><strong>Important:</strong> Please be especially quiet between 12:00 AM and 6:00 AM</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>🎉 Events & Parties</h4>
+                    <p><strong>Parties:</strong> Events or parties are strictly prohibited</p>
+                    <p><strong>Camera Monitoring:</strong> Security cameras monitor guest count for compliance</p>
+                    <p><strong>Enforcement:</strong> If more than 16 people are detected, immediate eviction may be required</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>📸 Photography & Filming</h4>
+                    <p><strong>Commercial Use:</strong> Commercial photography and filming are allowed</p>
+                    <p><strong>Residential Use:</strong> Personal photos and videos are welcome</p>
+                    <p><strong>Restrictions:</strong> Please respect privacy and noise guidelines</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>🏘️ Neighborhood Respect</h4>
+                    <p><strong>Environment:</strong> This is a quiet, family-oriented neighborhood</p>
+                    <p><strong>Outdoor Activities:</strong> Keep outdoor noise minimal, especially in front and back yards</p>
+                    <p><strong>Community:</strong> We want to be respectful of our neighbors</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h4>📹 Security & Safety</h4>
+                    <p><strong>Cameras:</strong> Security cameras are installed at the front and back of the property</p>
+                    <p><strong>Purpose:</strong> For your safety and to ensure compliance with house rules</p>
+                    <p><strong>Privacy:</strong> Cameras are positioned to monitor exterior areas only</p>
+                </div>
+            </div>
+            
+            <div style="background: #f0fff4; border: 1px solid #9ae6b4; padding: 1.5rem; border-radius: 12px; margin-top: 2rem;">
+                <h4 style="color: #22543d; margin-bottom: 0.5rem;">✅ Important Reminder</h4>
+                <p style="margin: 0; color: #2f855a;">Following these rules helps ensure a great experience for everyone. If you have any questions about these guidelines, please don't hesitate to ask!</p>
+            </div>
+            
+            <div style="background: #fef5e7; border: 1px solid #fed7aa; padding: 1.5rem; border-radius: 12px; margin-top: 1rem;">
+                <h4 style="color: #c05621; margin-bottom: 0.5rem;">💡 Pro Tip</h4>
+                <p style="margin: 0; color: #744210;">Plan your arrival after 4:00 PM and departure before 12:00 PM to ensure a smooth check-in and check-out process. Remember, this is a peaceful neighborhood - keeping noise levels down helps everyone enjoy their stay!</p>
+            </div>
+        </div>
+
+        <div id="amenities" class="tab-content">
+            <h2>How to Use...</h2>
+            <p>Instructions for the TV, coffee maker, thermostat, etc. You can add more details for each amenity.</p>
+        </div>
+
+        <div id="local-favorites" class="tab-content">
+            <h2>Our Local Favorites</h2>
+            <h3>Restaurants</h3>
+            <ul>
+                <li>[Restaurant Name]: Great for [Cuisine Type]. [Short description].</li>
+            </ul>
+            <h3>Cafes</h3>
+            <ul>
+                <li>[Cafe Name]: Best coffee in town.</li>
+            </ul>
+            <h3>Attractions</h3>
+            <ul>
+                <li>[Attraction Name]: A must-see! [Short description].</li>
+            </ul>
+        </div>
+
+        <div id="departure" class="tab-content">
+            <h2>Before You Leave</h2>
+            <p>Thank you for staying with us! Before you check out, please:</p>
+            <ul>
+                <li>Take out the trash.</li>
+                <li>Place used towels in the laundry basket.</li>
+                <li>Log out of any streaming services.</li>
+                <li>Lock the door behind you.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabcontent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove "active" class from all tab buttons
+            var tablinks = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the selected tab content and add "active" class to the button
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
